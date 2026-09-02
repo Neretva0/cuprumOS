@@ -1,0 +1,12 @@
+[package]
+name = "cuprum_os"
+version = "0.1.0"
+edition = "2024"
+
+# Profilen som används när jag kör `cargo build`. 
+[profile.dev] 
+panic = "abort" # Stäng av stack unwinding vid panic.
+
+# Profilen som används när jag kör `cargo build --release`. 
+[profile.release] 
+panic = "abort" # Stäng av stack unwinding vid panic.

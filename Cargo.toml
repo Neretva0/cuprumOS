@@ -3,10 +3,16 @@ name = "cuprum_os"
 version = "0.1.0"
 edition = "2024"
 
-# Profilen som används när jag kör `cargo build`. 
-[profile.dev] 
-panic = "abort" # Stäng av stack unwinding vid panic.
+[dependencies]
+bootloader = "0.9"
+volatile = "0.2.6"
+spin = "0.5.2"
 
-# Profilen som används när jag kör `cargo build --release`. 
-[profile.release] 
-panic = "abort" # Stäng av stack unwinding vid panic.
+[dependencies.lazy_static]
+version = "1.0"
+features = ["spin_no_std"]
+
+[[bin]]
+name = "cuprum_os"
+test = false
+bench = false

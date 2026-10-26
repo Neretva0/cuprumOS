@@ -66,6 +66,7 @@ Run the test suite directly inside QEMU:
 cargo test
 ```
 
-Acknowledgments
+#### Acknowledgments
 
-Thanks to Philipp Oppermann for creating and maintaining the Writing an OS in Rust tutorial series.
+Thanks to Philipp Oppermann for creating and maintaining the
+[Writing an OS in Rust](https://os.phil-opp.com/) tutorial series.

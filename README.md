@@ -65,3 +65,7 @@ Run the test suite directly inside QEMU:
 ```bash
 cargo test
 ```
+
+Acknowledgments
+
+Thanks to Philipp Oppermann for creating and maintaining the Writing an OS in Rust tutorial series.
